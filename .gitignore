@@ -1,7 +1,7 @@
 # Generated with gitignore-gen.nvim
 
-# Created by https://www.toptal.com/developers/gitignore/api/lua
-# Edit at https://www.toptal.com/developers/gitignore?templates=lua
+# Created by https://www.toptal.com/developers/gitignore/api/lua,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=lua,vim
 
 ### Lua ###
 # Compiled Lua sources
@@ -46,7 +46,28 @@ luac.out
 *.hex
 
 
-# End of https://www.toptal.com/developers/gitignore/api/lua
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# End of https://www.toptal.com/developers/gitignore/api/lua,vim
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
 

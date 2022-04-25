@@ -1,0 +1,15 @@
+================================================================================
+                                                          *gitignore-gen.nvim*
+
+This plugin helps you generate a `.gitignore` using templates for one or more
+selected rule sets. See examples below:
+
+                                                    *gitignore-gen.generate()*
+gitignore-gen.generate()
+
+    Opens up a series of dialogs to run you through generating your
+    `.gitignore`. If you have an existing `.gitignore` you will be prompted if
+    you wish to keep the existing rules or wipe them and start fresh.
+
+
+ vim:tw=78:ts=8:ft=help:norl:
