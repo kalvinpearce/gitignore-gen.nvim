@@ -19,7 +19,7 @@ local generate = function()
 		if is_generated then
 			current_items = helpers.get_current_items(contents)
 			user_overrides = helpers.get_user_rules(contents)
-		else
+		elseif contents ~= "" then
 			local choice = ui.get_selection(
 				"Gitignore Generator: Retain existing rules?",
 				{ "Retain existing", "Override existing (deletes all existing rules)" }
