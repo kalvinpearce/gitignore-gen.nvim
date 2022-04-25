@@ -3,6 +3,7 @@ local M = {}
 local a = require("plenary.async")
 
 M.read_file = function(path)
+	a.util.scheduler()
 	local err, fd = a.uv.fs_open(path, "a+", 438)
 	assert(not err, err)
 	local err, stat = a.uv.fs_fstat(fd)
@@ -16,6 +17,7 @@ M.read_file = function(path)
 end
 
 M.write_file = function(path, contents)
+	a.util.scheduler()
 	local err, fd = a.uv.fs_open(path, "w", 438)
 	assert(not err, err)
 	err = a.uv.fs_write(fd, contents)

@@ -1,9 +1,12 @@
 local M = {}
 
+local a = require("plenary.async")
 local curl = require("plenary.curl")
 local config = require("gitignore-gen.config")
 
 M.get_list = function()
+	a.util.scheduler()
+	local curl = require("plenary.curl")
 	local request = curl.get(config.api_url .. "list")
 	if not request.status == 200 then
 		return
