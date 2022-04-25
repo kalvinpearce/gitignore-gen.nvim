@@ -3,6 +3,9 @@
 A simple neovim plugin to generate `.gitignore` using
 [gitignore.io](https://gitignore.io/) templates.
 
+### Preview
+![gitignore-gen nvim](https://user-images.githubusercontent.com/17244425/165109360-f29e4eab-62eb-436d-8568-b846bec4d8a7.gif)
+
 ## Getting Started
 
 ### Required dependencies
